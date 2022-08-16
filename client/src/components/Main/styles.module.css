@@ -1,0 +1,20 @@
+.searches {
+  border-radius: 10px;
+  padding: 3px 3px 3px 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: max-content;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+.searches img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.searches span {
+  color: black;
+  font-size: 15px;
+}
