@@ -159,6 +159,7 @@ const Main = (props) => {
         });
         setPage(1);
         pageChange(null, 1);
+        getCar();
       })
       .catch((err) => {
         swal({
@@ -518,11 +519,13 @@ const Main = (props) => {
           name="categ"
           className="form-control p-2"
           onChange={(e) => handleCategSearch(e)}
-		  value={selectCateg || ""}
+          value={selectCateg || ""}
         >
           <option value="">--Select Categories--</option>
           {car_categ.map((cat, index) => (
-            <option key={index} value={cat}>{cat} </option>
+            <option key={index} value={cat}>
+              {cat}{" "}
+            </option>
           ))}
         </select>
 
